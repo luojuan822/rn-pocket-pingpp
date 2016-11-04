@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C5415BB1DB62D100011F025 /* PingPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5415BA1DB62D100011F025 /* PingPayManager.m */; };
+		4C55252C1DBB2BE300067697 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5418611DB6496A0011F025 /* CFNetwork.framework */; };
+		4C55252D1DBB2BEB00067697 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5418631DB649770011F025 /* SystemConfiguration.framework */; };
+		4C55252F1DBB2BF200067697 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C55252E1DBB2BF200067697 /* Security.framework */; };
+		4C5525311DBB2BFA00067697 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525301DBB2BFA00067697 /* QuartzCore.framework */; };
+		4C5525331DBB2C0300067697 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525321DBB2C0300067697 /* CoreTelephony.framework */; };
+		4C5525351DBB2C0B00067697 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525341DBB2C0B00067697 /* CoreMotion.framework */; };
+		4C5525AE1DBB588D00067697 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525A31DBB588D00067697 /* AlipaySDK.framework */; };
+		4C5525AF1DBB588D00067697 /* libpingpp+alipay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525A41DBB588D00067697 /* libpingpp+alipay.a */; };
+		4C5525B01DBB588D00067697 /* libpingpp+network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525A71DBB588D00067697 /* libpingpp+network.a */; };
+		4C5525B11DBB588D00067697 /* libpingpp+webview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525AA1DBB588D00067697 /* libpingpp+webview.a */; };
+		4C5525B21DBB588D00067697 /* libpingppcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525AB1DBB588D00067697 /* libpingppcore.a */; };
+		4C5525E21DBCAAD600067697 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525E11DBCAAD600067697 /* libc++.1.dylib */; };
+		4C5525E41DBCAB0200067697 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525E31DBCAB0200067697 /* libsqlite3.dylib */; };
+		4C5525E61DBCAB2700067697 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525E51DBCAB2700067697 /* libz.1.dylib */; };
+		4C5525E81DBCAB6A00067697 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5525E71DBCAB6A00067697 /* libstdc++.6.0.9.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C5415B41DB62D100011F025 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C5415B61DB62D100011F025 /* libPingPayManagerIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPingPayManagerIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5415B91DB62D100011F025 /* PingPayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PingPayManager.h; sourceTree = "<group>"; };
+		4C5415BA1DB62D100011F025 /* PingPayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PingPayManager.m; sourceTree = "<group>"; };
+		4C5418611DB6496A0011F025 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4C5418631DB649770011F025 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4C55252E1DBB2BF200067697 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4C5525301DBB2BFA00067697 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4C5525321DBB2C0300067697 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4C5525341DBB2C0B00067697 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4C5525361DBB2C1500067697 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4C5525381DBB2C1D00067697 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4C55253A1DBB2C2500067697 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4C55253C1DBB2C3100067697 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		4C5525A21DBB588D00067697 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		4C5525A31DBB588D00067697 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		4C5525A41DBB588D00067697 /* libpingpp+alipay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpingpp+alipay.a"; sourceTree = "<group>"; };
+		4C5525A71DBB588D00067697 /* libpingpp+network.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpingpp+network.a"; sourceTree = "<group>"; };
+		4C5525A81DBB588D00067697 /* PingppURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingppURLResponse.h; sourceTree = "<group>"; };
+		4C5525AA1DBB588D00067697 /* libpingpp+webview.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpingpp+webview.a"; sourceTree = "<group>"; };
+		4C5525AB1DBB588D00067697 /* libpingppcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpingppcore.a; sourceTree = "<group>"; };
+		4C5525AC1DBB588D00067697 /* Pingpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pingpp.bundle; sourceTree = "<group>"; };
+		4C5525AD1DBB588D00067697 /* Pingpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pingpp.h; sourceTree = "<group>"; };
+		4C5525E11DBCAAD600067697 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libc++.1.dylib"; sourceTree = DEVELOPER_DIR; };
+		4C5525E31DBCAB0200067697 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
+		4C5525E51DBCAB2700067697 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libz.1.dylib; sourceTree = DEVELOPER_DIR; };
+		4C5525E71DBCAB6A00067697 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libstdc++.6.0.9.dylib"; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C5415B31DB62D100011F025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5525E81DBCAB6A00067697 /* libstdc++.6.0.9.dylib in Frameworks */,
+				4C5525E61DBCAB2700067697 /* libz.1.dylib in Frameworks */,
+				4C5525E41DBCAB0200067697 /* libsqlite3.dylib in Frameworks */,
+				4C5525E21DBCAAD600067697 /* libc++.1.dylib in Frameworks */,
+				4C5525AE1DBB588D00067697 /* AlipaySDK.framework in Frameworks */,
+				4C5525B11DBB588D00067697 /* libpingpp+webview.a in Frameworks */,
+				4C5525AF1DBB588D00067697 /* libpingpp+alipay.a in Frameworks */,
+				4C5525351DBB2C0B00067697 /* CoreMotion.framework in Frameworks */,
+				4C5525331DBB2C0300067697 /* CoreTelephony.framework in Frameworks */,
+				4C5525311DBB2BFA00067697 /* QuartzCore.framework in Frameworks */,
+				4C55252F1DBB2BF200067697 /* Security.framework in Frameworks */,
+				4C55252D1DBB2BEB00067697 /* SystemConfiguration.framework in Frameworks */,
+				4C5525B01DBB588D00067697 /* libpingpp+network.a in Frameworks */,
+				4C55252C1DBB2BE300067697 /* CFNetwork.framework in Frameworks */,
+				4C5525B21DBB588D00067697 /* libpingppcore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C5415AD1DB62D100011F025 = {
+			isa = PBXGroup;
+			children = (
+				4C55259F1DBB588D00067697 /* PingppSDK */,
+				4C5415B81DB62D100011F025 /* PingPayManagerIOS */,
+				4C5415B71DB62D100011F025 /* Products */,
+				4C5418601DB6496A0011F025 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C5415B71DB62D100011F025 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5415B61DB62D100011F025 /* libPingPayManagerIOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5415B81DB62D100011F025 /* PingPayManagerIOS */ = {
+			isa = PBXGroup;
+			children = (
+				4C5415B91DB62D100011F025 /* PingPayManager.h */,
+				4C5415BA1DB62D100011F025 /* PingPayManager.m */,
+			);
+			path = PingPayManagerIOS;
+			sourceTree = "<group>";
+		};
+		4C5418601DB6496A0011F025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C5525E71DBCAB6A00067697 /* libstdc++.6.0.9.dylib */,
+				4C5525E51DBCAB2700067697 /* libz.1.dylib */,
+				4C5525E31DBCAB0200067697 /* libsqlite3.dylib */,
+				4C5525E11DBCAAD600067697 /* libc++.1.dylib */,
+				4C55253C1DBB2C3100067697 /* libstdc++.tbd */,
+				4C55253A1DBB2C2500067697 /* libsqlite3.0.tbd */,
+				4C5525381DBB2C1D00067697 /* libz.tbd */,
+				4C5525361DBB2C1500067697 /* libc++.tbd */,
+				4C5525341DBB2C0B00067697 /* CoreMotion.framework */,
+				4C5525321DBB2C0300067697 /* CoreTelephony.framework */,
+				4C5525301DBB2BFA00067697 /* QuartzCore.framework */,
+				4C55252E1DBB2BF200067697 /* Security.framework */,
+				4C5418631DB649770011F025 /* SystemConfiguration.framework */,
+				4C5418611DB6496A0011F025 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C55259F1DBB588D00067697 /* PingppSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4C5525A01DBB588D00067697 /* Channels */,
+				4C5525A51DBB588D00067697 /* Dependencies */,
+				4C5525AB1DBB588D00067697 /* libpingppcore.a */,
+				4C5525AC1DBB588D00067697 /* Pingpp.bundle */,
+				4C5525AD1DBB588D00067697 /* Pingpp.h */,
+			);
+			path = PingppSDK;
+			sourceTree = "<group>";
+		};
+		4C5525A01DBB588D00067697 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				4C5525A11DBB588D00067697 /* Alipay */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		4C5525A11DBB588D00067697 /* Alipay */ = {
+			isa = PBXGroup;
+			children = (
+				4C5525A21DBB588D00067697 /* AlipaySDK.bundle */,
+				4C5525A31DBB588D00067697 /* AlipaySDK.framework */,
+				4C5525A41DBB588D00067697 /* libpingpp+alipay.a */,
+			);
+			path = Alipay;
+			sourceTree = "<group>";
+		};
+		4C5525A51DBB588D00067697 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				4C5525A61DBB588D00067697 /* Network */,
+				4C5525A91DBB588D00067697 /* WebView */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		4C5525A61DBB588D00067697 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4C5525A71DBB588D00067697 /* libpingpp+network.a */,
+				4C5525A81DBB588D00067697 /* PingppURLResponse.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4C5525A91DBB588D00067697 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				4C5525AA1DBB588D00067697 /* libpingpp+webview.a */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C5415B51DB62D100011F025 /* PingPayManagerIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5415BF1DB62D100011F025 /* Build configuration list for PBXNativeTarget "PingPayManagerIOS" */;
+			buildPhases = (
+				4C5415B21DB62D100011F025 /* Sources */,
+				4C5415B31DB62D100011F025 /* Frameworks */,
+				4C5415B41DB62D100011F025 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PingPayManagerIOS;
+			productName = PingPayManagerIOS;
+			productReference = 4C5415B61DB62D100011F025 /* libPingPayManagerIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C5415AE1DB62D100011F025 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = jessica;
+				TargetAttributes = {
+					4C5415B51DB62D100011F025 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4C5415B11DB62D100011F025 /* Build configuration list for PBXProject "PingPayManagerIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C5415AD1DB62D100011F025;
+			productRefGroup = 4C5415B71DB62D100011F025 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C5415B51DB62D100011F025 /* PingPayManagerIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C5415B21DB62D100011F025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5415BB1DB62D100011F025 /* PingPayManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4C5415BD1DB62D100011F025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C5415BE1DB62D100011F025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C5415C01DB62D100011F025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react/**",
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+					"$(SRCROOT)/PingppSDK/**",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react/**",
+					"$(inherited)",
+					"$(SRCROOT)/PingppSDK/**",
+					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Dependencies/WebView/**",
+					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Dependencies/Network/**",
+					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/**",
+					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Channels/Alipay/**",
+					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+					"$(PROJECT_DIR)/PingppSDK/Dependencies/Network",
+					"$(PROJECT_DIR)/PingppSDK/Dependencies/WebView",
+					"$(PROJECT_DIR)/PingppSDK/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C5415C11DB62D100011F025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react/**",
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+					"$(SRCROOT)/PingppSDK/**",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react/**",
+					"$(inherited)",
+					"$(SRCROOT)/PingppSDK/**",
+					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Dependencies/WebView/**",
+					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Dependencies/Network/**",
+					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/**",
+					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Channels/Alipay/**",
+					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+					"$(PROJECT_DIR)/PingppSDK/Dependencies/Network",
+					"$(PROJECT_DIR)/PingppSDK/Dependencies/WebView",
+					"$(PROJECT_DIR)/PingppSDK/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C5415B11DB62D100011F025 /* Build configuration list for PBXProject "PingPayManagerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5415BD1DB62D100011F025 /* Debug */,
+				4C5415BE1DB62D100011F025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5415BF1DB62D100011F025 /* Build configuration list for PBXNativeTarget "PingPayManagerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5415C01DB62D100011F025 /* Debug */,
+				4C5415C11DB62D100011F025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C5415AE1DB62D100011F025 /* Project object */;
+}
