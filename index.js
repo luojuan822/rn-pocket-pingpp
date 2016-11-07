@@ -1,20 +1,38 @@
 
-import {NativeModules, Platform, NativeAppEventEmitter} from 'react-native';
+import {NativeModules, Platform, NativeAppEventEmitter, NativeEventEmitter} from 'react-native';
 //console.log(NativeModules)
-// var invariant = require('invariant');
+var invariant = require('invariant');
 const { PingPayManager } = NativeModules;
 
-// console.log("PingPayManager===========");
-// console.log(PingPayManager);
+console.log("PingPayManager===========");
+console.log(PingPayManager);
 
 var savedCallback = undefined;
-NativeAppEventEmitter.addListener('Pingpp_Resp', resp => {
-    console.log('savedCallback====addListener====begin===', savedCallback);
-    const callback = savedCallback;
-    savedCallback = undefined;
-    callback && callback(resp);
-    console.log('savedCallback====addListener====end===', resp);
-});
+
+if (Platform.OS === 'ios') {
+    invariant(PingPayManager, 'ios failure');
+    const myNativeEvt = new NativeEventEmitter(PingPayManager);  //创建自定义事件接口  
+    myNativeEvt.addListener('Pingpp_Resp', resp => {
+        console.log('savedCallback====addListener====begin===', savedCallback);
+        const callback = savedCallback;
+        savedCallback = undefined;
+        callback && callback(resp);
+        console.log('savedCallback====addListener====end===', resp);
+    });
+} else if (Platform.OS === 'android') {
+    invariant(PingPayManager, 'android failure');
+
+    NativeAppEventEmitter.addListener('Pingpp_Resp', resp => {
+        console.log('savedCallback====addListener====begin===', savedCallback);
+        const callback = savedCallback;
+        savedCallback = undefined;
+        callback && callback(resp);
+        console.log('savedCallback====addListener====end===', resp);
+    });
+} else {
+    invariant(PingPayManager, "Invalid platform");
+}
+
 
 function waitForResponse() {
     return new Promise((resolve, reject) => {
@@ -24,6 +42,7 @@ function waitForResponse() {
         }
         savedCallback = r => {
             savedCallback = undefined;
+            console.log('savedCallback====waitForResponse====resolve===', r);
             resolve(r);
             // const {result, errCode, errMsg} = r;
 

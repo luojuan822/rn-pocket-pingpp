@@ -65,6 +65,7 @@ RCT_EXPORT_MODULE()
     NSArray *list = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleURLTypes"];
     for(NSDictionary *item in list) {
         NSString *name = item[@"CFBundleURLName"];
+        NSLog(@"CFBundleURLName=======%@",name);
         if([name isEqualToString:@"alipay"]) {
             NSArray *schemes = item[@"CFBundleURLSchemes"];
             if(schemes.count > 0) {
@@ -89,38 +90,5 @@ RCT_EXPORT_METHOD(pay:(NSString *)charge)
                [self onResult:result error:error];
            }];
 }
-
-//RCT_EXPORT_METHOD(setDebugMode:(BOOL)enabled
-//                  :(RCTResponseSenderBlock)callback)
-//{
-//    [Pingpp setDebugMode:enabled];
-//    callback(@[[NSNull null]]);
-//}
-//
-//RCT_EXPORT_METHOD(handleOpenURLInIOS8:(NSURL *)url
-//                  :(RCTResponseSenderBlock)callback)
-//{
-//    [Pingpp handleOpenURL:url withCompletion:^(NSString *result, PingppError *error) {
-//        callback(@[@(error.code), result]);
-//    }];
-//}
-//
-//RCT_EXPORT_METHOD(handleOpenURLInIOS9:(NSURL *)url
-//                  :(NSString *)sourceApplication
-//                  :(RCTResponseSenderBlock)callback)
-//{
-//    [Pingpp handleOpenURL:url sourceApplication:sourceApplication withCompletion:^(NSString *result, PingppError *error) {
-//        callback(@[@(error.code), result]);
-//    }];
-//}
-//
-//RCT_EXPORT_METHOD(createPayment:(NSDictionary *)charge
-//                  :(NSString *)schema
-//                  :(RCTResponseSenderBlock)callback)
-//{
-//    [Pingpp createPayment:charge appURLScheme:schema withCompletion:^(NSString *result, PingppError *error) {
-//        callback(@[@(error.code), result]);
-//    }];
-//}
 
 @end
