@@ -303,7 +303,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -358,28 +358,25 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react/**",
 					"$(inherited)/**",
-					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+					"$(SRCROOT)/PingppSDK/Channels/Alipay",
 					"$(SRCROOT)/PingppSDK/**",
 				);
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/PingppSDK/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react/**",
 					"$(inherited)",
-					"$(SRCROOT)/PingppSDK/**",
-					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+					"$(SRCROOT)/PingppSDK/Channels/Alipay",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)/**",
-					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Dependencies/WebView/**",
-					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Dependencies/Network/**",
-					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/**",
-					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Channels/Alipay/**",
-					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
-					"$(PROJECT_DIR)/PingppSDK/Dependencies/Network",
-					"$(PROJECT_DIR)/PingppSDK/Dependencies/WebView",
-					"$(PROJECT_DIR)/PingppSDK/**",
+					"$(SRCROOT)/PingppSDK/Channels/Alipay",
+					"$(SRCROOT)/PingppSDK/Dependencies/Network",
+					"$(SRCROOT)/PingppSDK/Dependencies/WebView",
+					"$(SRCROOT)/PingppSDK/**",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -394,27 +391,23 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react/**",
 					"$(inherited)/**",
-					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+					"$(SRCROOT)/PingppSDK/Channels/Alipay",
 					"$(SRCROOT)/PingppSDK/**",
 				);
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/PingppSDK/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react/**",
 					"$(inherited)",
-					"$(SRCROOT)/PingppSDK/**",
-					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
+					"$(SRCROOT)/PingppSDK/Channels/Alipay",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)/**",
-					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Dependencies/WebView/**",
-					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Dependencies/Network/**",
-					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/**",
-					"$(PROJECT_DIR)/../node_modules/rn-pocket-pingpp/ios/PingppSDK/Channels/Alipay/**",
-					"$(PROJECT_DIR)/PingppSDK/Channels/Alipay",
-					"$(PROJECT_DIR)/PingppSDK/Dependencies/Network",
-					"$(PROJECT_DIR)/PingppSDK/Dependencies/WebView",
-					"$(PROJECT_DIR)/PingppSDK/**",
+					"$(SRCROOT)/PingppSDK/Channels/Alipay",
+					"$(SRCROOT)/PingppSDK/Dependencies/Network",
+					"$(SRCROOT)/PingppSDK/Dependencies/WebView",
+					"$(SRCROOT)/PingppSDK/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
