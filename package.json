@@ -20,6 +20,27 @@
         }
       },
       "/Users/jessica/Documents/pocket"
+    ],
+    [
+      {
+        "raw": "rn-pocket-pingpp@git+https://github.com/luojuan822/rn-pocket-pingpp.git",
+        "scope": null,
+        "escapedName": "rn-pocket-pingpp",
+        "name": "rn-pocket-pingpp",
+        "rawSpec": "git+https://github.com/luojuan822/rn-pocket-pingpp.git",
+        "spec": "git+https://github.com/luojuan822/rn-pocket-pingpp.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:luojuan822/rn-pocket-pingpp.git",
+          "sshUrl": "git+ssh://git@github.com/luojuan822/rn-pocket-pingpp.git",
+          "httpsUrl": "git+https://github.com/luojuan822/rn-pocket-pingpp.git",
+          "gitUrl": "git://github.com/luojuan822/rn-pocket-pingpp.git",
+          "shortcut": "github:luojuan822/rn-pocket-pingpp",
+          "directUrl": "https://raw.githubusercontent.com/luojuan822/rn-pocket-pingpp/master/package.json"
+        }
+      },
+      "/Users/jessica/Documents/pocket"
     ]
   ],
   "_from": "git+https://github.com/luojuan822/rn-pocket-pingpp.git",
@@ -29,10 +50,10 @@
   "_location": "/rn-pocket-pingpp",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "git+https://github.com/luojuan822/rn-pocket-pingpp.git",
+    "raw": "rn-pocket-pingpp@git+https://github.com/luojuan822/rn-pocket-pingpp.git",
     "scope": null,
-    "escapedName": null,
-    "name": null,
+    "escapedName": "rn-pocket-pingpp",
+    "name": "rn-pocket-pingpp",
     "rawSpec": "git+https://github.com/luojuan822/rn-pocket-pingpp.git",
     "spec": "git+https://github.com/luojuan822/rn-pocket-pingpp.git",
     "type": "hosted",
@@ -47,13 +68,12 @@
     }
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/luojuan822/rn-pocket-pingpp.git#97b03ef662ad2204c764f7206b43ee5299ade530",
-  "_shasum": "6cdd172c45a667c628df1f49f5696e531b5e904e",
+  "_resolved": "git+https://github.com/luojuan822/rn-pocket-pingpp.git#d74d9e818476897ee82fd8de924e15c574395946",
+  "_shasum": "517b37f00fed13ce6962fe8219faf35fa66273ed",
   "_shrinkwrap": null,
-  "_spec": "git+https://github.com/luojuan822/rn-pocket-pingpp.git",
+  "_spec": "rn-pocket-pingpp@git+https://github.com/luojuan822/rn-pocket-pingpp.git",
   "_where": "/Users/jessica/Documents/pocket",
   "author": {
     "name": "@luojuan822"
